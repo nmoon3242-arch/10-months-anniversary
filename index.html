@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>For My Love ❤️</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:Georgia,serif}
+body{
+  min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px;
+  color:#fff;overflow:hidden;
+  background:radial-gradient(circle at 50% 30%,#5b172b 0,#260b15 45%,#090308 100%);
+}
+body:before{
+  content:"";position:fixed;inset:0;pointer-events:none;opacity:.25;
+  background-image:radial-gradient(#fff 1px,transparent 1px);
+  background-size:42px 42px;
+}
+.glow{position:fixed;width:260px;height:260px;border-radius:50%;filter:blur(80px);background:#c83b62;opacity:.22}
+.g1{top:-90px;left:-70px}.g2{bottom:-100px;right:-80px}
+.wrap{width:min(720px,100%);position:relative;z-index:2}
+.screen{
+  min-height:650px;padding:42px 28px;border-radius:32px;text-align:center;
+  background:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.15);
+  box-shadow:0 30px 100px rgba(0,0,0,.55);backdrop-filter:blur(18px);
+  display:none;align-items:center;justify-content:center;flex-direction:column;
+  animation:in .7s ease;
+}
+.screen.active{display:flex}
+@keyframes in{from{opacity:0;transform:translateY(15px) scale(.98)}to{opacity:1;transform:none}}
+.eyebrow{font-size:12px;letter-spacing:4px;text-transform:uppercase;opacity:.65}
+h1{font-size:clamp(45px,11vw,78px);line-height:.95;margin:20px 0 10px}
+h1 span{color:#ff9aae}
+.sub{font-size:19px;color:#ffdce3}
+.heart{font-size:64px;animation:pulse 1.7s infinite}
+@keyframes pulse{50%{transform:scale(1.12)}}
+button{
+  margin-top:32px;padding:15px 28px;border:0;border-radius:999px;
+  background:#ffd4dc;color:#35101d;font-size:16px;font-weight:bold;cursor:pointer;
+  box-shadow:0 10px 30px rgba(255,140,165,.18);transition:.2s
+}
+button:hover{transform:translateY(-3px)}
+.card{max-width:600px}
+.card h2{font-size:38px;margin:12px 0;color:#ffadbc}
+.message{font-size:17px;line-height:1.85;color:#f8e8ec}
+.sorry{margin:18px 0;padding:16px;border-radius:18px;background:rgba(255,120,145,.09);border:1px solid rgba(255,150,170,.18)}
+.divider{width:80px;height:1px;background:#ff9aae;margin:25px auto;opacity:.6}
+.signature{color:#ffb3c0;font-size:20px}
+.surprise-box{
+  max-width:570px;padding:30px 22px;border-radius:24px;
+  background:linear-gradient(145deg,rgba(255,120,145,.12),rgba(255,255,255,.05));
+  border:1px solid rgba(255,180,195,.2)
+}
+.surprise-box h2{font-size:34px;margin-top:0}
+.big{font-size:22px;line-height:1.7;color:#ffe8ed}
+.small{font-size:14px;opacity:.65;margin-top:25px}
+.back{background:transparent;color:#ffd4dc;border:1px solid rgba(255,210,220,.25);box-shadow:none}
+.float{position:fixed;bottom:-30px;font-size:20px;opacity:.35;animation:up 9s linear infinite;z-index:1}
+@keyframes up{to{transform:translateY(-115vh) rotate(30deg);opacity:0}}
+</style>
+</head>
+<body>
+<div class="glow g1"></div><div class="glow g2"></div>
+
+<div class="float" style="left:8%;animation-delay:0s">♡</div>
+<div class="float" style="left:27%;animation-delay:2s">❤️</div>
+<div class="float" style="left:54%;animation-delay:4s">♡</div>
+<div class="float" style="left:82%;animation-delay:1s">❤️</div>
+
+<main class="wrap">
+
+<section id="home" class="screen active">
+  <div class="heart">❤️</div>
+  <div class="eyebrow">A little something for you</div>
+  <h1>For My <span>Love</span></h1>
+  <p class="sub">I wrote this just for you... 🥺</p>
+  <button onclick="go('letter')">Open My Letter ❤️</button>
+</section>
+
+<section id="letter" class="screen">
+  <div class="card">
+    <div class="eyebrow">10 months of us</div>
+    <h2>Happy 10 Months<br>Anniversary, My Love ❤️</h2>
+
+    <div class="sorry">
+      <b>I'm really sorry for wishing you so late 🥺</b><br>
+      I know I should've wished you on time, and I genuinely feel bad.
+    </div>
+
+    <p class="message">
+      Please don't think for a second that I forgot our special day.
+      These 10 months have given me so many beautiful memories, little
+      fights, smiles, and moments that I'll always keep close to my heart.
+      Through everything, I'm still grateful that it's <b>you and me</b>. 🫂❤️
+    </p>
+
+    <div class="divider"></div>
+
+    <p class="message">
+      Thank you for being a part of my life, for understanding me,
+      and for making ordinary moments feel special.
+      I hope we keep growing together and making countless memories. 🧿
+    </p>
+
+    <p class="signature">10 months down, forever to go. ♾️</p>
+
+    <button onclick="go('surprise')">There's one more thing… 💌</button>
+  </div>
+</section>
+
+<section id="surprise" class="screen">
+  <div class="surprise-box">
+    <div class="heart">💌</div>
+    <div class="eyebrow">My little surprise</div>
+    <h2>One last thing...</h2>
+    <p class="big">
+      No matter how late this wish is,<br>
+      <b>my love for you is never late. ❤️</b>
+    </p>
+    <p class="message">
+      I'm sorry, bubuuu. Please forgive me? 🥺👉🏻👈🏻<br>
+      You mean so much to me, and I'm lucky to have you.
+    </p>
+    <div class="divider"></div>
+    <p class="big">I LOVE YOU SO MUCH ❤️</p>
+    <p class="small">Thank you for being my favourite person. 🫶🏻</p>
+  </div>
+  <button class="back" onclick="go('home')">Read it again ↻</button>
+</section>
+
+</main>
+
+<script>
+function go(id){
+  document.querySelectorAll('.screen').forEach(x=>x.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+</script>
+</body>
+</html>
